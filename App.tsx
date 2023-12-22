@@ -56,6 +56,8 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 }
 
 function App(): React.JSX.Element {
+  const isFabricEnabled = (global as any).nativeFabricUIManager != null;
+
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -72,6 +74,7 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <Text>isFabricEnabled: {isFabricEnabled + ''}</Text>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
