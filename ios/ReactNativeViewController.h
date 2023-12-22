@@ -1,11 +1,9 @@
-// BlueViewController.h
+// ReactNativeViewController.h
 #import <React/RCTBridgeDelegate.h>
 #import <UIKit/UIKit.h>
 
-@interface BlueViewController : NSObject <RCTBridgeDelegate>
+@interface ReactNativeViewController : NSObject
 - (void)initializeReactNativeApp;
 - (void)invalidate;
 @property (nonatomic, strong) UIViewController *vc;
-
-+ (instancetype)sharedInstance;
 @end

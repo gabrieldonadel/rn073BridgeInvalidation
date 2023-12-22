@@ -14,8 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-rn073BridgeInvalidation-rn073BridgeInvalidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rn073BridgeInvalidation-rn073BridgeInvalidationTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C08861E22B348BCE00A8F89A /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08861E12B348BCE00A8F89A /* BlueViewController.m */; };
-		C08861E82B349DA500A8F89A /* CustomAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C08861E72B349DA500A8F89A /* CustomAppDelegate.mm */; };
+		C08861E22B348BCE00A8F89A /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08861E12B348BCE00A8F89A /* ReactNativeViewController.m */; };
 		C08861E92B34A38A00A8F89A /* BridgeDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C08861E42B349D0E00A8F89A /* BridgeDelegate.mm */; };
 /* End PBXBuildFile section */
 
@@ -46,12 +45,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-rn073BridgeInvalidation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn073BridgeInvalidation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rn073BridgeInvalidation/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rn073BridgeInvalidation-rn073BridgeInvalidationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn073BridgeInvalidation-rn073BridgeInvalidationTests.release.xcconfig"; path = "Target Support Files/Pods-rn073BridgeInvalidation-rn073BridgeInvalidationTests/Pods-rn073BridgeInvalidation-rn073BridgeInvalidationTests.release.xcconfig"; sourceTree = "<group>"; };
-		C08861E12B348BCE00A8F89A /* BlueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
-		C08861E32B348BD700A8F89A /* BlueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		C08861E12B348BCE00A8F89A /* ReactNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewController.m; sourceTree = "<group>"; };
+		C08861E32B348BD700A8F89A /* ReactNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewController.h; sourceTree = "<group>"; };
 		C08861E42B349D0E00A8F89A /* BridgeDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeDelegate.mm; sourceTree = "<group>"; };
 		C08861E52B349D2100A8F89A /* BridgeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeDelegate.h; sourceTree = "<group>"; };
-		C08861E62B349D9200A8F89A /* CustomAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAppDelegate.h; sourceTree = "<group>"; };
-		C08861E72B349DA500A8F89A /* CustomAppDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = CustomAppDelegate.mm; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -101,12 +98,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				C08861E12B348BCE00A8F89A /* BlueViewController.m */,
-				C08861E32B348BD700A8F89A /* BlueViewController.h */,
+				C08861E32B348BD700A8F89A /* ReactNativeViewController.h */,
+				C08861E12B348BCE00A8F89A /* ReactNativeViewController.m */,
 				C08861E52B349D2100A8F89A /* BridgeDelegate.h */,
 				C08861E42B349D0E00A8F89A /* BridgeDelegate.mm */,
-				C08861E62B349D9200A8F89A /* CustomAppDelegate.h */,
-				C08861E72B349DA500A8F89A /* CustomAppDelegate.mm */,
 			);
 			name = rn073BridgeInvalidation;
 			sourceTree = "<group>";
@@ -409,9 +404,8 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				C08861E92B34A38A00A8F89A /* BridgeDelegate.mm in Sources */,
-				C08861E82B349DA500A8F89A /* CustomAppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				C08861E22B348BCE00A8F89A /* BlueViewController.m in Sources */,
+				C08861E22B348BCE00A8F89A /* ReactNativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

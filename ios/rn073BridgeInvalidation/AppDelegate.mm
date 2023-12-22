@@ -1,27 +1,26 @@
 #import "AppDelegate.h"
-#import "BlueViewController.h"
+#import "ReactNativeViewController.h"
 #import "BridgeDelegate.h"
 
 #import <React/RCTRootView.h>
 #import <React/RCTBundleURLProvider.h>
 
 @implementation AppDelegate {
-  UIViewController *viewController;
-  BlueViewController *blueViewController;
+  ReactNativeViewController *reactNativeViewController;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+  UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
   self.window.rootViewController = viewController;
   
   [self addButtonToView:viewController.view];
   
-  blueViewController = [[BlueViewController alloc] init];
-  [blueViewController initializeReactNativeApp];
-  CGFloat remainingHeight = self.window.bounds.size.height - 100;
-  blueViewController.vc.view.frame = CGRectMake(0, 120, self.window.bounds.size.width, remainingHeight);
-  [viewController.view addSubview:blueViewController.vc.view];
+  reactNativeViewController = [[ReactNativeViewController alloc] init];
+  [reactNativeViewController initializeReactNativeApp];
+  
+  reactNativeViewController.vc.view.frame = CGRectMake(0, 120, self.window.bounds.size.width, self.window.bounds.size.height - 100);
+  [viewController.view addSubview:reactNativeViewController.vc.view];
   
   [self.window makeKeyAndVisible];
   
@@ -40,9 +39,9 @@
 
 - (void)buttonTapped:(UIButton *)sender {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [blueViewController invalidate];
+    [self->reactNativeViewController invalidate];
     
-    [blueViewController initializeReactNativeApp];
+    [self->reactNativeViewController   initializeReactNativeApp];
     //    [self sendUserInterfaceStyleNotification];
   });
 }
