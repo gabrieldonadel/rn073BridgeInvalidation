@@ -13,3 +13,4 @@ Seems that this commit [eb3d5a4b838ca7f632f02022e9be48402ca9d71f](https://github
 
 https://github.com/gabrieldonadel/rn073BridgeInvalidation/assets/11707729/75974536-da85-491c-967d-fc2b271a2808
 
+This does not happen on react-native 0.72.8
