@@ -11,4 +11,5 @@ Seems that this commit [eb3d5a4b838ca7f632f02022e9be48402ca9d71f](https://github
 3. Run the app and select "Send UserInterfaceStyle event after invalidating"
 4. Press the "Invalidate and create new instance" button
 
-<video src="demo.mp4" />
+https://github.com/gabrieldonadel/rn073BridgeInvalidation/assets/11707729/75974536-da85-491c-967d-fc2b271a2808
+
