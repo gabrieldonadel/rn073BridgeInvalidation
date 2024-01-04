@@ -57,6 +57,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 
 function App(): React.JSX.Element {
   const isFabricEnabled = (global as any).nativeFabricUIManager != null;
+  const isBridgelessEnabled = Boolean((global as any).RN$Bridgeless);
 
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -75,6 +76,7 @@ function App(): React.JSX.Element {
         style={backgroundStyle}>
         <Header />
         <Text>isFabricEnabled: {isFabricEnabled + ''}</Text>
+        <Text>isBridgelessEnabled: {isBridgelessEnabled + ''}</Text>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
